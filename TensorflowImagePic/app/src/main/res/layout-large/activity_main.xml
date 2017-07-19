@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myActivity"
+    android:background="@drawable/myapp"
+    tools:context="com.example.amol.tensrflowimagepic.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="450dp"
+        android:layout_height="550dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.79"
+        android:layout_centerHorizontal="true" />
+
+
+            <Button
+                android:id="@+id/takeImg"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/button_states"
+                android:onClick="takePhoto"
+                android:text="@string/b1"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:layout_above="@+id/dispInfo"
+                android:layout_toStartOf="@+id/textView"
+                android:layout_marginEnd="27dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/dispInfo"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_states"
+                android:onClick="takePhoto"
+                android:text="@string/b2"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/takeImg"
+                android:layout_marginBottom="17dp"
+                android:textAllCaps="false"/>
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="270dp"
+            android:layout_height="230dp"
+            android:background="@color/colorAccent"
+            android:textColor="#0CD21B"
+            android:textSize="18sp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignBottom="@+id/dispInfo"
+            android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
