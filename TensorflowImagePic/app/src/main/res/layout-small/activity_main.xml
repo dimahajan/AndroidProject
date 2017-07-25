@@ -10,51 +10,61 @@
 
     <ImageView
         android:id="@+id/imgView"
-        android:layout_width="140dp"
-        android:layout_height="100dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_gravity="center"
-        android:layout_centerHorizontal="true"
+        android:layout_weight="0.79"
+        android:layout_marginTop="15dp"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/takeImg" />
+        android:layout_centerHorizontal="true" />
 
 
             <Button
                 android:id="@+id/takeImg"
-                android:layout_width="50dp"
-                android:layout_height="25dp"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_weight="0.75"
                 android:background="@drawable/button_states"
                 android:onClick="takePhoto"
                 android:text="@string/b1"
                 android:textColor="#ffffff"
-                android:textSize="6sp"
-                android:layout_above="@+id/dispInfo"
-                android:layout_alignStart="@+id/dispInfo"
-                android:layout_marginBottom="14dp"
-                android:textAllCaps="false"/>
+                android:textSize="5sp"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@+id/tv" />
 
             <Button
                 android:id="@+id/dispInfo"
-                android:layout_width="50dp"
-                android:layout_height="25dp"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
                 android:background="@drawable/button_states"
                 android:onClick="takePhoto"
                 android:text="@string/b2"
                 android:textColor="#ffffff"
-                android:textSize="6sp"
+                android:textAllCaps="false"
+                android:textSize="5sp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignStart="@+id/imgView"
-                android:textAllCaps="false"/>
+                android:layout_alignEnd="@+id/tv2" />
 
 
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:background="@color/colorAccent"
-            android:textColor="#0CD21B"
-            android:textSize="18sp"
-            android:layout_alignTop="@+id/takeImg"
-            android:layout_alignEnd="@+id/imgView" />
+            android:id="@+id/tv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:textSize="5sp"
+            android:layout_below="@+id/imgView"
+            android:layout_toEndOf="@+id/imgView" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:textSize="5sp"
+        android:layout_marginStart="19dp"
+        android:layout_below="@+id/imgView"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

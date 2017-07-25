@@ -1,1 +1,0 @@
-include ':app', ':libandroid_tensorflow_inference_java'

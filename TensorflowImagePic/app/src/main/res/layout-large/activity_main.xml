@@ -10,53 +10,68 @@
 
     <ImageView
         android:id="@+id/imgView"
-        android:layout_width="450dp"
-        android:layout_height="550dp"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
         android:layout_gravity="center"
         android:layout_weight="0.79"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
 
 
             <Button
                 android:id="@+id/takeImg"
-                android:layout_width="250dp"
-                android:layout_height="120dp"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
                 android:layout_weight="0.75"
                 android:background="@drawable/button_states"
                 android:onClick="takePhoto"
                 android:text="@string/b1"
                 android:textColor="#ffffff"
-                android:textSize="30sp"
-                android:layout_above="@+id/dispInfo"
-                android:layout_toStartOf="@+id/textView"
-                android:layout_marginEnd="27dp"
-                android:textAllCaps="false"/>
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="50dp"
+                android:layout_alignTop="@+id/dispInfo"
+                android:layout_alignEnd="@+id/tv"
+                 />
 
             <Button
                 android:id="@+id/dispInfo"
-                android:layout_width="250dp"
-                android:layout_height="120dp"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
                 android:background="@drawable/button_states"
                 android:onClick="takePhoto"
                 android:text="@string/b2"
                 android:textColor="#ffffff"
-                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginEnd="57dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignStart="@+id/takeImg"
-                android:layout_marginBottom="17dp"
-                android:textAllCaps="false"/>
+                android:layout_alignEnd="@+id/tv2"
+                android:layout_marginBottom="20dp" />
 
 
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="270dp"
-            android:layout_height="230dp"
-            android:background="@color/colorAccent"
-            android:textColor="#0CD21B"
-            android:textSize="18sp"
-            android:layout_marginEnd="25dp"
-            android:layout_alignBottom="@+id/dispInfo"
+            android:id="@+id/tv"
+            android:layout_width="250dp"
+            android:layout_height="220dp"
+            android:background="#ffffff"
+            android:textSize="13dp"
+            android:layout_marginEnd="18dp"
+            android:layout_alignBaseline="@+id/tv2"
+            android:layout_alignBottom="@+id/tv2"
             android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:background="#ffffff"
+        android:textSize="13dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/imgView"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

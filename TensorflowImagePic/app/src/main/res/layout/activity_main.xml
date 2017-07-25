@@ -10,53 +10,68 @@
 
     <ImageView
         android:id="@+id/imgView"
-        android:layout_width="300dp"
-        android:layout_height="350dp"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
         android:layout_gravity="center"
         android:layout_weight="0.79"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true" />
+        android:layout_marginTop="14dp" />
 
 
             <Button
                 android:id="@+id/takeImg"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:layout_weight="0.75"
                 android:background="@drawable/button_states"
+                android:onClick="takePhoto"
                 android:text="@string/b1"
                 android:textColor="#ffffff"
-                android:layout_marginBottom="16dp"
-                android:layout_above="@+id/dispInfo"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="14dp"
-                android:textSize="18sp"
-                android:textAllCaps="false"/>
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="19dp"
+                android:layout_below="@+id/tv"
+
+                android:layout_alignEnd="@+id/tv" />
 
             <Button
                 android:id="@+id/dispInfo"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:background="@drawable/button_states"
+                android:onClick="takePhoto"
                 android:text="@string/b2"
                 android:textColor="#ffffff"
-                android:layout_alignParentBottom="true"
-                android:layout_alignStart="@+id/takeImg"
-                android:layout_marginBottom="10dp"
-                android:textSize="18sp"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:layout_marginStart="21dp"
+                android:layout_alignTop="@+id/takeImg"
+                android:layout_alignStart="@+id/tv2" />
 
 
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="170dp"
-            android:layout_height="140dp"
-            android:background="@color/colorAccent"
-            android:textColor="#0CD21B"
-            android:layout_alignTop="@+id/takeImg"
+            android:id="@+id/tv"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="#ffffff"
+            android:textSize="13dp"
+            android:layout_alignBaseline="@+id/tv2"
+            android:layout_alignBottom="@+id/tv2"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="13dp"
-            android:textSize="18sp"/>
+            android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:background="#ffffff"
+        android:textSize="13dp" />
 
 </RelativeLayout>
