@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myActivity"
+    android:background="@drawable/myapp"
+    tools:context="com.example.amol.tensrflowimagepic.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.79"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+
+            <Button
+                android:id="@+id/takeImg"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/button_states"
+                android:onClick="takePhoto"
+                android:text="@string/b1"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="19dp"
+                android:layout_below="@id/tv"
+                android:layout_alignEnd="@+id/tv" />
+
+            <Button
+                android:id="@+id/dispInfo"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_states"
+                android:onClick="takePhoto"
+                android:text="@string/b2"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:layout_marginStart="21dp"
+                android:layout_alignTop="@+id/takeImg"
+                android:layout_alignStart="@+id/tv2" />
+
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:background="#ffffff"
+            android:textSize="13dp"
+            android:layout_marginEnd="11dp"
+            android:layout_alignTop="@+id/imgView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="22dp"
+        android:background="#ffffff"
+        android:textSize="13dp"
+        android:layout_alignBaseline="@+id/tv"
+        android:layout_alignBottom="@+id/tv"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/amol/AndroidStudioProjects/TensrflowImagePic/app/libs/libandroid_tensorflow_inference_java.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6454951fd82b6c2de1666263e2cd6e593627d878">
+        <dex dex="/Users/amol/AndroidStudioProjects/TensrflowImagePic/app/build/intermediates/transforms/dex/debug/folders/1000/2/libandroid_tensorflow_inference_java_2530f484b85d0776f6e8b5eb92dd549edcbaaee0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/amol/AndroidStudioProjects/TensrflowImagePic/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/amol/AndroidStudioProjects/TensrflowImagePic/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_52f271860114be7c221982fa13e022dec8ee0f49/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/amol/AndroidStudioProjects/TensrflowImagePic/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="148942e014f92d8fc58e59b862b59f2faf8e0861">
+        <dex dex="/Users/amol/AndroidStudioProjects/TensrflowImagePic/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_80813f549facffcecbcd0912c5ae6c90b07afc3e/classes.dex" />
+    </item>
+
+</items>
